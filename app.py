@@ -20,7 +20,6 @@ with col2:
 # Social links
 st.markdown("[![GitHub](https://img.shields.io/badge/GitHub-moundher122-black?logo=github)](https://github.com/moundher122)")
 st.markdown("[![LinkedIn](https://img.shields.io/badge/LinkedIn-moundherbourouma-blue?logo=linkedin)](https://linkedin.com/in/moundherbourouma)")
-st.markdown("📧 [Email](mailto:bouroumanamoundher@gmail.com)")
 st.write("****")
 
 with open("cv.pdf", "rb") as file:
