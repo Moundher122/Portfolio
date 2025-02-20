@@ -24,7 +24,7 @@ with open("cv.pdf", "rb") as file:
 
 st.markdown(
     """
-    <div style="text-align: center; font-size: 18px; font-weight: bold; color: #FFFAFA; margin-top: 10px;">
+    <div style="text-align: center; font-size: 18px; font-weight: bold;margin-top: 10px;">
         ✨ Hi! I'm Moundher Bouroumana, a Backend Engineer, ML Developer, and Python Developer. ✨
     </div>
     <div style="text-align: center; margin-top: 20px;">
@@ -97,7 +97,7 @@ for project in projects:
     with st.container():
         st.markdown(
             f"""
-            <div style="border: 2px solid rgba(221, 221, 221, 0.5); padding: 15px; border-radius: 10px; margin-bottom: 10px; background-color: rgb(14, 17, 23);">
+            <div style="border: 2px solid rgba(221, 221, 221, 0.5); padding: 15px; border-radius: 10px; margin-bottom: 10px;">
                 <h3>{project["name"]}</h3>
                 <p>{project["overview"]}</p>
                 <strong>Skills:</strong> {project["skills"]}
