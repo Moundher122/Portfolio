@@ -1,26 +1,8 @@
 import streamlit as st
 from PIL import Image
-import os
-from dotenv import load_dotenv
 
 # Page title
 st.set_page_config(page_title="Moundher Bouroumana - Portfolio", layout="wide")
-load_dotenv()
-
-GA_TRACKING_ID = os.getenv("ID")
-st.write(f"GA_TRACKING_ID: {GA_TRACKING_ID}")
-if GA_TRACKING_ID:
-    GA_SCRIPT = f"""
-    <script async src="https://www.googletagmanager.com/gtag/js?id={GA_TRACKING_ID}"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){{dataLayer.push(arguments);}}
-    gtag('js', new Date());
-    gtag('config', '{GA_TRACKING_ID}');
-    </script>
-    """
-    st.markdown(GA_SCRIPT, unsafe_allow_html=True)
-# Profile Picture and Name in the same line
 profile_pic = "profile.jpg"  # Ensure this image exists in your working directory
 image = Image.open(profile_pic)
 
